@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleplateform.css">
+    <link rel="stylesheet" href="styleplateform2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <span>logo</span>
+            <nav class="barmenu">
+                <ul>
+                    <li><a href="#" title="info" alt="alter">Lien1</a></li>
+                    <li><a href="#" title="info" alt="alter">Lien2</a></li>
+                    <li><a href="#" title="info" alt="alter">Lien3</a></li>
+                </ul>
+            </nav>
+            <span>logo</span>
+        </div>
+        
+    </header>
+
+    <!-- ===================FIN HEADER================================== -->
+
+    <!--====================================== DEBUT FORMULAIRE 1(Personne physique)========================================= -->
+        <div class="container1">
+            <div class="subcontainer1">
+                <fieldset class="fieldset1">
+                    <legend> Personne physique </legend>
+                    <form action="#" method="get" class="form1">
+                        <div class="form-control">
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" placeholder="Nom" maxlength="20"  required>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="prenom">Prenom :</label> 
+                            <input type="text" placeholder="Prénom"  maxlength="20" required> 
+                        </div>
+                        
+                        <div class="form-control">
+                            <label for="genre">select</label>
+                            <select id="genre" placeholder="Genre" required>
+                                <option>Monsieur</option>
+                                <option>Madame</option>
+                            </select>
+                        </div>
+                        
+
+                        <div class="form-control">
+                            <label for="datenaissance">Date de naissance:</label>
+                            <input type="date" name="datenaissance" id="datenaissance">
+                        </div>
+                        <div class="form-control">
+                            <label for="adresse">Adresse</label>
+                            <input type="text" placeholder="Adresse"  maxlength="35"  required>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email">E-mail :</label>
+                            <input type="email" placeholder="Courriel" required>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="tel">Phone</label>
+                            <input type="tel" placeholder="Numéro Tel" ondrop="return false;" onpaste="return false;"
+                                onkeypress="return event.charCode>=48 && event.charCode<=57" required>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="password">Creer un mot de passe</label>
+                            <input type="password" id="password" placeholder="Mot de passe" required>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="passwordconfirm">Confirmer mot de passe</label>
+                            <input type="password" id="passwordconfirm" placeholder="confirmer mot de passe" required><br>
+                        </div>    
+                    </form>
+                        <!--====================================== FIN FORMULAIRE 1(Personne physique)========================================= -->
+<br><br>
+
+ <!--====================================== DEBUT FORMULAIRE 2(Nom de la structure)========================================= -->
+
+
+                </fieldset>
+                <fieldset class="fieldset2">
+                    <legend>Nom de la structure</legend>
+                    <form action="" method="get" class="form2">
+                        <div class="form-control2">
+                            <label for="structure">Type de structure</label>
+                            <select name="structure" id="structure">
+                                <option value="Coopérative">Coopérative</option>
+                                <option value="Groupement">Groupement</option>
+                                <option value="Entreprise">Entreprise</option>
+                                <option value="Société">Société</option>
+                                <option value="Etablissement">Etablissement</option>
+                            </select>
+                        </div>
+                        <br/>
+
+                        <div class="form-control2">
+                            <label for="Agrément">Agrément</label>
+                            <input type="checkbox" name="Agrement" value="oui" > 
+                        </div>
+
+                        <div class="form-control2">
+                            <label for="Agrément provisoir" value="non">Agrément provisoir</label>
+                            <input type="checkbox" name="Agrement" required >
+                        </div>
+
+                        <div class="form-control2">
+                            <label for="RCCM">RCCM</label>
+                            <input type="checkbox" name="Agrement" value="oui" required >
+                        </div>
+                        <br/> <br>
+                        <label for="N°ID">N°ID: </label>
+                        <input type="number" min="0" maxlength="30" required>
+
+                        <label> du à</label>
+                        <input type="date"><br>
+
+                        <label for="lieu">Lieu</label><br>
+                        <input type="text" placeholder="Lieu d'enregistrement" required><br>
+
+                        <label for="">Adresse du Siège:</label><br>
+                        <input type="text" placeholder="Siège social"  maxlength="35"> <br>
+
+                        <label for="tel">Tel:</label><br>
+                        <input type="tel" ondrop="return false;" onpaste="return false;"
+                               onkeypress="return event.charCode>=48 && event.charCode<=57" placeholder="telephone" required><br>
+                        
+                        <label for="email">E-mail</label><br>
+                        <input type="email" placeholder="Em@il entreprise" required><br>
+
+
+                      
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+  <!--====================================== FIN FORMULAIRE 2 (Nom de la structure)========================================= -->
+
+
+ <!--====================================== DEBUT FORMULAIRE 3 (Zone d'activité)========================================= -->
+
+        <div class="container2">
+            <div class="subcontainer2">
+                <fieldset class="fieldset3">
+                    <legend>Zone d'activité</legend>
+                    <form action="" method="get" class="form3">
+                        <label for="village">Lieu d'exercice:</label><br>
+                        <input type="text" placeholder="Adresse, village ou localité" maxlength="35" required> <br>
+                        <br>
+                        <label for="">District de:</label>
+                        <input type="text" maxlength="20" ><br>
+                         <label for="">Départemet</label> 
+                        <input type="text"  maxlength="20" ><br>
+
+                        <h3>Avez-vous un justificatif d’exploitation de la propriété ? : </h3>
+                            <label>oui</label> 
+                                 <input type="radio" name="choix" value="oui">
+                            <label>non</label>  
+                                <input type="radio" name="choix" value="non">
+                        <br>
+                        
+                        
+                            <ul>
+                                <li>
+                                    <label for="">Bail de location </label>
+                                <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+                                <input type="file" />
+                                </li>
+
+                                <li>
+                                    <label for="">Attestation de vente</label>
+                                <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+                                <input type="file" />
+                                </li>
+
+                                <li>
+                                    <label for="">Avis d'apréciation</label> 
+                                <input type="hidden" name="MAX_FILE_SIZE" value="4194304" /> 
+                                <input type="file" />
+                                </li>
+
+                                <li>
+                                    <label for="">Titre de propriété</label>
+                                <input type="hidden" name="MAX_FILE_SIZE" value="4194304" /> 
+                                <input type="file" />
+                                </li>
+                            </ul>
+                            <br>
+                           
+
+                            <label for="">Superficie agricole exploitable  (10.000m²= 1ha) </label><br>
+                            <input type="number" step="1" min="0" max="100000" placeholder="en mètre crré">  
+                            <label for="">m²; soit</label>
+                            <input type="number" step="1" min="0" max="100000" placeholder="en hectare"> ha. 
+
+
+                    </form>
+                </fieldset>
+<!--====================================== FIN FORMULAIRE 3 (Zone d'activité)========================================= -->
+
+
+ <!--====================================== DEBUT FORMULAIRE 4 (Production)========================================= -->
+
+                <!-- NOUS DEVOUS CRRER UN BOTTON RADIO QUI APRES AVOIR SELECTIONNER TRUE==OUI ALORS AFFICHE EN HECTARE OU EN M² -->
+
+                <fieldset class="fieldset4">
+                    <legend>Production</legend>
+                    <form action="" method="get" class="form4">
+                        <label for="agricole">Agricole</label>
+                        <select name="agricole" id="agricole">
+                            <optgroup label="jardin">
+                                  <option value="">sillon</option>
+                                  <option value="">sillon</option>
+                                  <option value="">sillon</option>
+                            </optgroup>
+                            <optgroup label="jardin">
+                                <option value="">sillon</option>
+                                <option value="">sillon</option>
+                                <option value="">sillon</option>
+                          </optgroup>
+                        </select>  
+                          <br>
+                        <label for="">Superficie agricole exploitée:</label><br>
+                        <input type="number" step="5" min="0" max="100000" placeholder="en mètre carré">
+
+                        <label for="">m²; soit:</label>
+                        <input type="number" step="1" min="0" max="100000" placeholder="en hectare"> ha.
+
+                        <label for="">Potentiel d’exploitation: </label><br>
+                        <input type="number" step="1" min="0" max="100000"> 
+
+                        <label for="">m²; soit:</label>
+                        <input type="number" step="1" min="0" max="100000"> ha
+                        
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+
+     <!--====================================== FIN FORMULAIRE 4 (Production)========================================= -->
+
+
+
+<script type="module" src=""></script>
+</body>
+</html>
